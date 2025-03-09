@@ -38,7 +38,7 @@ $filas = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <p class='edad'>Nivel de travesura: {$fila['nivel']}</p>
                     <div class='acciones'>
                         <a href='registro.php?id={$fila['id']}' class='btn-accion btn-editar'>📝 Editar</a>
-                        <a href='generar_pdf.php?id={$fila['id']}' class='btn-accion btn-descargar' target='_blank'>📄 Descargar</a>
+                        <a href='descargar_pdf.php?id={$fila['id']}' class='btn-accion btn-descargar' target='_blank'>📄 Descargar</a>
                         <button onclick='eliminarPersonaje({$fila['id']}, this)' class='btn-accion btn-eliminar'>🗑️ Eliminar</button>
                     </div>
                 </div>
